@@ -4,70 +4,106 @@
     	margin-left: auto;
     	margin-right: auto;
     }
-
-    .featured-work h2 {
-		font-size: 28px;
-	}
-
-	.featured-work .featured-work-item {
-		display: flex;
-		flex-flow: row wrap;
-		margin: 0 auto;
-	}
-
-	.featured-work .featured-work-item li img {
-    	width: 50%
-    	height: auto; 
-    }
 }
 
 @media screen and (max-width: 700px) {
-	.featured-work h2 {
+	.featured-work h1 {
 		font-size: 28px;
 	}
 
 	.featured-work .featured-work-item {
-		display: flex;
-		flex-flow: row wrap;
-		margin: 0 auto;
+		flex-flow: wrap;
+		width: 100%;
 	}
 
-	.featured-work .featured-work-item li img {
-    	width: 50%;
-    	height: auto; 
-    }
+	.featured-work .featured-work-item .item {
+		box-sizing: border-box;
+		width: 50%;
+	}
+
+    .featured-work .item img {
+		width: 48%;
+	}
+
+	.featured-work .featured-work-item .item:nth-of-type(3) {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 550px) {
-	.featured-work h2 {
+	.hero {
+		background-image: none;
+		height: 0;
+	}
+
+	.featured-work h1 {
 		font-size: 28px;
 	}
 
 	.featured-work .featured-work-item {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0 auto;
+		flex-flow: wrap;
+		width: 100%;
 	}
 
-	.featured-work .featured-work-item li img {
-    	width: 100%;
-    	height: auto; 
-    }
+	.featured-work .featured-work-item .item {
+		box-sizing: border-box;
+		width: 50%;
+	}
+
+    .featured-work .item img {
+		width: 48%;
+	}
+
+	.featured-work .featured-work-item .item:nth-of-type(3) {
+		width: 100%;
+	}
 }
 
 
-@media screen and (max-width: 400px) {
-	.featured-work h2 {
+@media screen and (max-width: 420px) {
+	.header-title {
+		font-size: 35px;
+	}
+	
+	.featured-work h1 {
 		font-size: 28px;
 	}
 
-	.featured-work .featured-work-item {
-		display: flex;
-		flex-wrap: wrap;
+	.hero {
+		background-image: none;
+		height: 0;
 	}
 
-	.featured-work .featured-work-item li img {
-    	width: 100%;
-    	height: auto; 
-    }
+	.featured-work .featured-work-item {
+		flex-flow: wrap;
+		width: 100%;
+	}
+
+	.featured-work .featured-work-item .item {
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+    .featured-work .item img {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+	.header-title {
+		font-size: 24px;
+	}
+
+	.subheader-title {
+	    font-size: 15px;
+	}
+	
+	.header-logo {
+	    height: 50px;
+	}
+
+	.featured-work h1 {
+		font-size: 28px;
+	}
 }
